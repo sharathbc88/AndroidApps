@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.KnowTheNumber.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="@android:color/holo_green_dark">
+
+    <TextView
+        android:id="@+id/rollResult"
+        android:textSize="20dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Let's roll the yellow Dice to Play!"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/die1Image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/rollResult"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/die_1" />
+
+    <TextView
+        android:id="@+id/dieone"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Die 1"
+        android:textColor="@android:color/white"
+        android:layout_marginRight="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_alignBaseline="@+id/dieTwo"
+        android:layout_alignBottom="@+id/dieTwo"
+        android:layout_alignRight="@+id/die1Image"
+        android:layout_alignEnd="@+id/die1Image" />
+
+    <ImageView
+        android:id="@+id/die2Image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/rollResult"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/die_1" />
+
+    <TextView
+        android:id="@+id/dieTwo"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Die 2"
+        android:layout_marginTop="24dp"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/die2Image"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/die3Image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/rollResult"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/die_1" />
+
+    <TextView
+        android:id="@+id/dieThree"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Die 3"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp"
+        android:layout_alignBaseline="@+id/dieTwo"
+        android:layout_alignBottom="@+id/dieTwo"
+        android:layout_alignLeft="@+id/die3Image"
+        android:layout_alignStart="@+id/die3Image" />
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Is the total a Odd/ Even number?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/white"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textSize="20dp"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/dieone" />
+       // android:layout_alignParentLeft="true"
+       // android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/scoreText1"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Is the total a Prime number?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="26dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textSize="20dp"
+        android:layout_below="@+id/scoreText"
+         />
+
+    <TextView
+        android:id="@+id/scoreText2"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColorHighlight="@color/colorPrimaryDark"
+        android:text="Score: 0 "
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="26dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textSize="25dp"
+        android:layout_below="@+id/scoreText1"
+         />
+
+
+</RelativeLayout>
